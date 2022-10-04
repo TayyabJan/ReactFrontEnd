@@ -33,7 +33,8 @@ const Login = () => {
             password: password
 
         }).then(res => {
-            
+            console.log(res);
+
             localStorage.setItem("token", res.data);
             NotificationManager.success(" Logged In Successfuly..... ", "", 3000);
             navigation("/");
