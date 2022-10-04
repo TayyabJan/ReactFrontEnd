@@ -15,7 +15,7 @@ const Products = () => {
       name: "Test"
         
     }
-    axios.post("http://localhost:3001/api/products",bodyparams,config
+    axios.post("https://jsbackendapi.herokuapp.com/api/products",bodyparams,config
     ).then( res =>{
       console.log(res.data)
       setProducts(res.data);

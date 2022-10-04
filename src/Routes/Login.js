@@ -28,7 +28,7 @@ const Login = () => {
             email: email,
             password: password
         }
-        const { data } = axios.post("http://localhost:3001/api/user/login", {
+        const { data } = axios.post("https://jsbackendapi.herokuapp.com/api/user/login", {
             email: email,
             password: password
 

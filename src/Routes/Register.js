@@ -40,7 +40,7 @@ const Register = () => {
       password: password,
       address: address
   }
-    axios.post("http://localhost:3001/api/user/register",bodyparams,config
+    axios.post("https://jsbackendapi.herokuapp.com//api/user/register",bodyparams,config
       
     ).then(res => {
       NotificationManager.success(`User ${name} is Successfully registered`,"",3000)
